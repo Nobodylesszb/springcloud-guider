@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @Description:
  */
 
-@FeignClient(value = "user-service",fallback = UserFallbackService.class )
+@FeignClient(value = "user-service", fallback = UserFallbackService.class)
 public interface UserService {
 
     @PostMapping("/user/create")

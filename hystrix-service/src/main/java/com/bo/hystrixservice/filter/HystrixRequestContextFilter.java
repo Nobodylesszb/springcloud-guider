@@ -16,7 +16,7 @@ import java.io.IOException;
 
 
 @Component
-@WebFilter(urlPatterns = "/*",asyncSupported = true)
+@WebFilter(urlPatterns = "/*", asyncSupported = true)
 public class HystrixRequestContextFilter implements Filter {
 
     @Override

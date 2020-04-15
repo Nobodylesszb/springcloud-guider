@@ -34,11 +34,11 @@ public class UserFallbackService implements UserService {
 
     @Override
     public CommonResult update(User user) {
-        return new CommonResult("调用失败，服务被降级",500);
+        return new CommonResult("调用失败，服务被降级", 500);
     }
 
     @Override
     public CommonResult delete(Long id) {
-        return new CommonResult("调用失败，服务被降级",500);
+        return new CommonResult("调用失败，服务被降级", 500);
     }
 }
