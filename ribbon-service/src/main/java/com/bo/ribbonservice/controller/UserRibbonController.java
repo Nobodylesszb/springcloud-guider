@@ -25,8 +25,8 @@ public class UserRibbonController {
     private String userServiceUrl;
 
     @RequestMapping("/{id}")
-    public CommonResult getUser(@PathVariable Long id){
-        return restTemplate.getForObject(userServiceUrl + "/user/{1}",CommonResult.class, id);
+    public CommonResult getUser(@PathVariable Long id) {
+        return restTemplate.getForObject(userServiceUrl + "/user/{1}", CommonResult.class, id);
     }
 
     @GetMapping("/getByUsername")
